@@ -47,6 +47,7 @@ let nav = document.querySelector("header");
 
 let colors = ['#1f1fff', '#4992ff', '#7cdaff', '#6453ff'];
 nav.addEventListener("mousemove", (event) => {
+    event.stopPropagation();
     event.target.style.backgroundColor = "#7cdaff";
     event.target.style.color = "#4992ff";
 })
